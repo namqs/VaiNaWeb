@@ -6,39 +6,57 @@ header {
   display:flex;
   justify-content: space-between;
   width: 100%;
-  height: 15vh;
+  height: 10vh;
 }
-
 #secao1 > img {
-  width: 35px;
-  height: 35px;
+  width: 100px;
+  height: 60px;
+  margin-left: 10px;
 }
 
 #secao1 { 
  display: flex;
  justify-content: center;
- gap:10px;
- width: 300px;
+ width: 240px;
  align-items: center;
+ margin-left: 70px;
 }
 
 #secao2 { 
   display: flex;
   justify-content: space-evenly;
-  width: 200px;
+  width: 170px;
   align-items: center;
+  margin-right: 60px;
  }
+ #secao2 > img {
+  width: 70px;
+  height: 30px;
+}
 
+ #secao3 {
+  display: none;
+ }
  @media (max-width: 500px) {
-  #secao1 {
-    width: auto;
+  header {
+    height: 10vh;
   }
 
+  #secao1 {
+    width: 220px;
+    margin-left: 10px;
+  }
   #secao2 {
     display: none;
   }
-
-  #secao1 + #secao2 img:nth-child(3) {
-    display: block;
+  #secao3 {
+    display: flex;
+    width: 70px;
+    height: 10vh;
+    align-items: center;
   }
+  #secao3 >img  {
+    height: 40px;
+  }
+
 }
